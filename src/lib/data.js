@@ -25,7 +25,7 @@ export const getPosts = async () => {
     }
   };
   
-  export const getPost = async (slug) => {
+  export const getPost = async (slug) => {         // Fetch a single post by slug , slug is a unique identifier for each post
     try {
       connectToDB();
       const post = await Post.findOne({slug});

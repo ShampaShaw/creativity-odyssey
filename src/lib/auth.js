@@ -67,7 +67,7 @@ export const {
           } 
         }),
     ],
-    callbacks: {
+    callbacks: {                           // Callbacks for JWT and session handling
         async signIn({ user, account, profile }) {
           if (account.provider === "github") {
             connectToDB();

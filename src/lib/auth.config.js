@@ -3,7 +3,7 @@ export const authConfig = {
         signIn: '/login',
     },
     providers:[],
-    callbacks: {
+    callbacks: {                   // Callbacks for JWT and session handling is moved to auth.js
         async jwt({token,user}){
             if(user){
                 token.id = user.id;

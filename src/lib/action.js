@@ -1,5 +1,5 @@
 "use server"
-
+//this file contains all the functions that are used to perform actions like adding, deleting, editing posts and users, handling login and logout, etc. this data is then used in the pages to perform the required actions. its move to the lib folder to keep the code organized and to separate the logic from the pages. this file is imported in the pages where the actions are performed.
 import { connectToDB } from "./utils";
 import { Post, User } from "./models";
 import { revalidatePath } from "next/cache";
